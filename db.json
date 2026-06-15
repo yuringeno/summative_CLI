@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alex",
+      "email": "alex@example.com",
+      "project_ids": [1]
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "email": "maria@example.com",
+      "project_ids": [2]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "CLI Tool",
+      "owner_id": 1,
+      "description": "Build a project management CLI",
+      "due_date": "2026-08-01",
+      "task_ids": [1, 2]
+    },
+    {
+      "id": 2,
+      "title": "Website Redesign",
+      "owner_id": 2,
+      "description": "Refresh company site",
+      "due_date": "2026-09-15",
+      "task_ids": [3]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Implement add-task",
+      "project_id": 1,
+      "status": "in-progress",
+      "assigned_to": 1
+    },
+    {
+      "id": 2,
+      "title": "Write tests",
+      "project_id": 1,
+      "status": "todo",
+      "assigned_to": null
+    },
+    {
+      "id": 3,
+      "title": "Design mockups",
+      "project_id": 2,
+      "status": "done",
+      "assigned_to": 2
+    }
+  ]
+}
